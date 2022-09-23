@@ -1,1 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <link rel="stylesheet" href="./style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hugo</title>
+</head>
+
+<body class="container">
+  <main>
+    <div>
+      <h2>Oi</h2>
+    </div>
+  </main>
+
+  <aside>
+    <h4>COMPETÊNCIAS</h4>
+    <a>JavaScript</a>
+    <div class="bar">
+      <progress value="75" max="100">75%</progress>
+    </div>
+    <a>Python</a>
+    <div class="bar">
+      <progress class="js" value="75" max="100"></progress>
+    </div>
+    <a>NodeJS</a>
+    <div class="bar">
+      <progress value="50" max="100"></progress>
+    </div>
+    <a>Flutter/Dart</a>
+    <div class="bar">
+      <progress style="width: 75%;" value="50" max="100"></progress>
+    </div>
+
+    <h4>IDIOMAS</h4>
+  </aside>
+
+  <footer>
+    <div>
+      <small>Copyright © <a id="cr"></a> Hugo Loiola de Queiroz</small>
+      <script>
+        let dt = new Date()
+        let ano = dt.getFullYear()
+        document.getElementById('cr').innerHTML = ano
+      </script>
+    </div>
+  </footer>
+
+</body>
+
+</html>
